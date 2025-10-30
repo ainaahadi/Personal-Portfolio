@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+        body {
+            background: linear-gradient(to right, #A7E7D1, #FFD1DC, #B2EBF2, #C5CAE9);
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            color: #3E2723;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            width: 90%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #8E7CC3;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            background: #A5B3E1;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 80%;
+        }
+
+        button:hover {
+            background: #C39BD3;
+            transform: scale(1.1);
+        }
+
+        #zakat-result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        function calculateZakat() {
+            let income = parseFloat(document.getElementById("income").value);
+            let zakat = (income * 2.5) / 100;
+            document.getElementById("zakat-result").innerText = "Zakat to Pay: RM " + zakat.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>💰 Zakat Calculator</h2>
+        <input type="number" id="income" placeholder="Enter yearly income"><br>
+        <button onclick="calculateZakat()">Calculate</button>
+        <p id="zakat-result"></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+        body {
+            background: linear-gradient(to right, #A7E7D1, #FFD1DC, #B2EBF2, #C5CAE9);
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            color: #3E2723;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tools-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tools-container a {
+            display: block;
+            width: 80%;
+            padding: 12px;
+            background: #A5B3E1;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+            text-align: center;
+            margin: auto;
+        }
+
+        .tools-container a:hover {
+            background: #C39BD3;
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #3E2723;">🔧 Useful Tools</h2>
+
+        <div class="tools-container">
+            <a href="SimpleCalculator.html">🧮 Simple Calculator</a>
+            <a href="BMIChecker.html">⚖️ BMI Checker</a>
+            <a href="ZakatCalculator.html">💰 Zakat Calculator</a>
+            <a href="UnitConverter.html">🔢 Unit Converter</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainaa Hadi - Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quicksand:wght@300;400;600&display=swap');
+
+        body { background: linear-gradient(to right, #A7E7D1, #FFD1DC, #B2EBF2, #C5CAE9); margin: 0; font-family: 'Quicksand', sans-serif; color: #3E2723; }
+        .container { width: 100%; max-width: 700px; background: rgba(255,255,255,0.95); border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 50px auto; padding: 24px 20px; text-align: center; }
+
+        .profile { font-family: 'Handlee', cursive; font-size: 28px; font-weight: bold; color: #3E2723; margin-top: 4px; }
+        .profile span { color: #8E7CC3; }
+
+        .links-container { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; margin-top: 20px; }
+        .links-container a { display: block; width: 85%; padding: 12px; background: #A5B3E1; color: #fff; font-weight: bold; border-radius: 10px; text-decoration: none; transition: 0.25s ease; font-family: 'Quicksand', sans-serif; }
+        .links-container a:hover { background: #C39BD3; transform: translateY(-2px); }
+
+        .icons { display: flex; justify-content: center; gap: 15px; margin-top: 16px; }
+        .icons a { text-decoration: none; color: #3E2723; font-size: 24px; transition: 0.2s; }
+        .icons a:hover { color: #8D6E63; transform: scale(1.1); }
+
+        .contact { margin-top: 20px; padding: 15px; background: #F8E1E7; border-radius: 10px; font-family: 'Quicksand', sans-serif; text-align: center; max-width: 520px; margin-left: auto; margin-right: auto; }
+        .contact iframe { display: block; margin: 0 auto; }
+        .contact span { font-weight: bold; color: #3E2723; }
+
+        .gif-container { text-align: center; margin-top: 20px; }
+        .gif { width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-8px);} }
+
+        iframe { width: 100%; height: 200px; border-radius: 10px; }
+
+        .projects { margin-top: 25px; text-align: center; }
+        .projects h3 { margin: 5px 0 10px; font-size: 20px; text-align: center; }
+        .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); justify-content: center; }
+        .card { background: #F9F7FE; border: 1px solid #E6E1FB; border-radius: 10px; padding: 14px; transition: transform .2s ease, box-shadow .2s ease; color: #3E2723; text-decoration: none; max-width: 520px; margin: 0 auto; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,.08); }
+
+        /* PawPal gallery */
+        .project-meta { color:#6B5FA9; font-size:13px; }
+        .project-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-top: 10px; }
+        .project-images img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #E6E1FB; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+
+        footer { margin-top: 20px; padding: 10px; font-size: 14px; color: #fff; background: #3E2723; border-radius: 10px; }
+
+        @media (max-width: 768px) { .links-container a { width: 90%; } .grid { grid-template-columns: 1fr; } }
+    </style>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <meta name="description" content="Ainaa Hadi - Portfolio, projects, CV, and contact information.">
+</head>
+<body>
+
+    <div class="container">
+        <p class="profile">AINAA <span>HADI</span></p>
+        <p><span style="font-weight:bold; color:#3E2723">My Portfolio</span></p>
+
+        <div class="gif-container">
+            <img src="kikigif.gif" alt="Kiki's Delivery Service GIF" class="gif">
+        </div>
+
+        <div class="links-container">
+            <a href="PersonalInfo.html">Personal Info</a>
+            <a href="ainaa-cv.html">View CV</a>
+            <a href="ainaa-cv.pdf" target="_blank">Download CV (PDF)</a>
+            <a href="UsefulTools.html">Useful Tools</a>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/ainaaahadi/" target="_blank" aria-label="LinkedIn">
+                <i data-feather="linkedin"></i>
+            </a>
+        </div>
+
+        <div class="projects">
+            <h3>Featured Projects</h3>
+            <div class="grid">
+                <div class="card">
+                    <strong>PawPal &ndash; Pet Feeder Tracker</strong>
+                    <div class="project-meta">IoT (ESP32) + Flutter + Firebase</div>
+                    <div class="project-images">
+                        <img src="assets/pawpal/userhomepage.png" alt="PawPal app - user home">
+                        <img src="assets/pawpal/userfeedinghistory.png" alt="PawPal app - schedule">
+                        <img src="assets/pawpal/userfoodlevel.png" alt="PawPal app - feeding history">
+                        <img src="assets/pawpal/usercatdetection.png" alt="PawPal app - food level history">
+                        <img src="assets/pawpal/adminhomepage.png" alt="PawPal app - cat detection history">
+                        <img src="assets/pawpal/adminfeedinghistory.png" alt="PawPal admin - dashboard">
+                        <img src="assets/pawpal/adminfoodlevel.png" alt="PawPal admin - user management">
+                        <img src="assets/pawpal/admincatdetection.png" alt="PawPal pet feeder device">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p><span>CONTACT ME</span></p>
+            <p>
+                <i data-feather="phone" style="vertical-align:middle;"></i>
+                <a href="tel:+60175990502" style="color:#3E2723; text-decoration:none;">+60175990502</a>
+            </p>
+            <p>
+                <i data-feather="mail" style="vertical-align:middle;"></i>
+                <a href="mailto:ainaaahadi@gmail.com" style="color:#3E2723; text-decoration:none;">ainaaahadi@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="contact">
+            <p><span>FIND ME</span></p>
+            <iframe src="https://maps.google.com/maps?q=Universiti Teknologi Malaysia,Kuala Lumpur&output=embed" allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            Made with love by Ainaa | Inspired by Kiki's Delivery Service
+        </footer>
+    </div>
+
+    <script>feather.replace();</script>
+</body>
+</html>
